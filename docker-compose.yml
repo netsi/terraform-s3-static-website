@@ -1,0 +1,21 @@
+version: '3.6'
+
+services:
+  localstack:
+    image: localstack/localstack:0.11.1
+    volumes:
+      - "./localstack:/tmp/localstack"
+    environment:
+      - DEFAULT_REGION=eu-central-1
+      - DATA_DIR=/tmp/localstack/data
+      - SERVICES=s3
+    ports:
+      - 4572:4572 # S3
+      - 8085:8080 # Dashboard
+    restart: "no"
+    networks:
+      - s3websites
+
+networks:
+  s3websites:
+    name: s3websites
