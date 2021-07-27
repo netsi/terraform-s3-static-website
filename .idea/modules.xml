@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/static-s3-website.iml" filepath="$PROJECT_DIR$/.idea/static-s3-website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../terraform-s3-static-website/.idea/terraform-s3-static-website.iml" filepath="$PROJECT_DIR$/../terraform-s3-static-website/.idea/terraform-s3-static-website.iml" />
     </modules>
   </component>
 </project>
